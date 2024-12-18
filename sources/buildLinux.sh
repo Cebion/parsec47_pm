@@ -40,4 +40,4 @@ cd src/abagames/p47
 find . -maxdepth 1 -name \*.d -type f -exec gdc $FLAGS -I../.. \{\} \;
 cd ../../..
 
-gdc -o PARSEC47 -s -Wl,--gc-sections -static-libphobos import/*.o* src/*.o* src/abagames/util/*.o* import/sdl/*.o* import/bindbc/sdl/*.o*  src/abagames/util/bulletml/*.o* src/abagames/util/sdl/*.o* src/abagames/p47/*.o* -lGL -lSDL2_mixer -lSDL2 -lbulletml_d -L./lib/x64
+gdc -o PARSEC47 -s -Wl,--gc-sections -static-libphobos import/*.o* src/*.o* src/abagames/util/*.o* import/sdl/*.o* import/bindbc/sdl/*.o*  src/abagames/util/bulletml/*.o* src/abagames/util/sdl/*.o* src/abagames/p47/*.o* -lGL -lSDL2_mixer -lSDL2 -L./libbulletml/bulletml/src -lbulletml
